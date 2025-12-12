@@ -156,9 +156,6 @@ if (num12 / 3 && num12 / 5) {
     alert("It is true")
 };
 
-// Chapter 14 – if statements nested
-
-
 // Chapter 15 – Arrays
 let fruits = ["Apple","Mango","Banana","Grapes","Orange"];
 alert(fruits);
@@ -168,3 +165,62 @@ let colors = ["Red","Blue","Green","Yellow","Black","Purple","Orange"];
 alert(colors);
 
 // Chapter 16 – Arrays: adding and removing elements
+fruits.push("watermelon");
+alert(fruits);
+fruits.pop();
+alert(fruits);
+fruits.unshift("kiwi");
+alert(fruits);
+fruits.shift();
+alert(fruits);
+
+// Chapter 17 – Arrays: removing, inserting, and extracting elements
+fruits.splice(1, 0, "papaya");
+alert(fruits);
+fruits.splice(2, 1);
+alert(fruits);
+let r = fruits.slice(1, 4);
+alert(r);
+
+// Chapter 18 – for loops
+for (let x = 1; x <= 5; x++) {
+    alert(x);
+};
+let newNames = ["Subhan","Shahab","Saim","Hanzala","Hasnain"];
+for (let t = 0; t < newNames.length; t++) {
+    alert(newNames[t]);
+};
+for (let p = 1; p <= 10; p++ + p++) {
+    alert(p);
+};
+
+// Chapter 21 – Changing case
+let place = "karachi";
+let u = place.toUpperCase();
+alert(u);
+let place1 = "LAHORE";
+let l = place1.toLowerCase();
+alert(l);
+let place2 = "punjab";
+let c = place2.charAt(0).toUpperCase() + place2.slice(1);
+alert(c);
+
+// Chapter 22 – Strings: measuring length and extracting parts
+let string = "Computer";
+let h = string.length;
+alert(h);
+let k = string.slice(0, 3);
+alert(k);
+let g = string.slice(5);
+alert(g);
+
+// Chapter 25 – Strings: replacing characters
+let strings = "Table";
+let o = strings.replace("Table", "chair");
+alert(o);
+let strings1 = "Wood";
+let q = strings1.replace("oo", "ha");
+alert(q);
+let strings2 = "Tab";
+let s = strings2.replace("T", "L");
+alert(s);
